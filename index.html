@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Shopping List</h1>
+        <form id="shopping-form">
+            <label>Add Item: </label> 
+            <input type="text" id="item-input" placeholder="Item name">
+            <input type="number" id="quantity-input" placeholder="Quantity" min="1" value="1">
+            <select id="category-input">
+                <option value="Groceries">Groceries</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Other">Other</option>
+            </select>
+            <button type="button" id="addNeed">Need</button>
+            <button type="button" id="addHave">Have</button>
+        </form>
+        
+        <div id="progress">
+            <h2>Shopping Progress</h2>
+            <div id="progress-bar">
+                <div id="progress-filled"></div>
+            </div>
+        </div>
+        
+        <div class="lists-container">
+            <div class="list-section">
+                <h2>Need</h2>
+                <ul id="need-list"></ul>
+            </div>
+            <div class="list-section">
+                <h2>Have</h2>
+                <ul id="have-list"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
